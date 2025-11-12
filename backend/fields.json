@@ -1,0 +1,1959 @@
+{
+  "status": "ok",
+  "messages": {
+    "generalMessages": [],
+    "recordMessages": []
+  },
+  "foundRows": 4,
+  "data": {
+    "define": {
+      "modules": "Public",
+      "permissions": "Public"
+    },
+    "publicView": {
+      "modules": "Public",
+      "permissions": "Public",
+      "fields": {
+        "animalID": {
+          "friendlyname": "ID",
+          "type": "key",
+          "modules": "Public",
+          "properties": [
+            "required"
+          ],
+          "name": "animalID"
+        }
+      }
+    },
+    "publicSearch": {
+      "modules": "Public",
+      "permissions": "Public",
+      "fields": {
+        "animalID": {
+          "friendlyname": "ID",
+          "type": "key",
+          "modules": "Public",
+          "name": "animalID"
+        },
+        "animalOrgID": {
+          "friendlyname": "Org ID",
+          "type": "key",
+          "values": "orgs",
+          "modules": "Public",
+          "name": "animalOrgID"
+        },
+        "animalActivityLevel": {
+          "friendlyname": "Activity level",
+          "type": "string",
+          "values": [
+            "",
+            "Not Active",
+            "Slightly Active",
+            "Moderately Active",
+            "Highly Active"
+          ],
+          "modules": "Public",
+          "name": "animalActivityLevel"
+        },
+        "animalAdoptedDate": {
+          "friendlyname": "Adopted Date",
+          "type": "date",
+          "modules": "Public",
+          "name": "animalAdoptedDate"
+        },
+        "animalAdoptionFee": {
+          "friendlyname": "Adoption fee",
+          "type": "string",
+          "lengthMax": "45",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "animalAdoptionFee"
+        },
+        "animalAgeString": {
+          "friendlyname": "Age (years/months)",
+          "type": "string",
+          "lengthMax": "45",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "animalAgeString"
+        },
+        "animalAltered": {
+          "friendlyname": "Altered",
+          "type": "string",
+          "values": [
+            "",
+            "No",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalAltered"
+        },
+        "animalAvailableDate": {
+          "friendlyname": "Available Date",
+          "type": "date",
+          "modules": "Public",
+          "name": "animalAvailableDate"
+        },
+        "animalBirthdate": {
+          "friendlyname": "Birthdate",
+          "type": "date",
+          "modules": "Public",
+          "name": "animalBirthdate"
+        },
+        "animalBirthdateExact": {
+          "friendlyname": "Exact Birthdate",
+          "type": "string",
+          "default": "No",
+          "values": [
+            "No",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalBirthdateExact"
+        },
+        "animalBreed": {
+          "friendlyname": "Breed",
+          "type": "string",
+          "lengthMax": "250",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "animalBreed"
+        },
+        "animalCoatLength": {
+          "friendlyname": "Coat Length",
+          "type": "string",
+          "values": [
+            "",
+            "Short",
+            "Medium",
+            "Long"
+          ],
+          "modules": "Public",
+          "name": "animalCoatLength"
+        },
+        "animalColor": {
+          "friendlyname": "Color",
+          "type": "string",
+          "lengthMax": "100",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "animalColor"
+        },
+        "animalColorID": {
+          "friendlyname": "Color (General)",
+          "type": "key",
+          "values": "animalColors",
+          "modules": "Public",
+          "name": "animalColorID"
+        },
+        "animalColorDetails": {
+          "friendlyname": "Color details",
+          "type": "string",
+          "lengthMax": "50",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "animalColorDetails"
+        },
+        "animalCourtesy": {
+          "friendlyname": "Courtesy",
+          "type": "string",
+          "default": "No",
+          "values": [
+            "Yes",
+            "No"
+          ],
+          "modules": "Public",
+          "name": "animalCourtesy"
+        },
+        "animalDeclawed": {
+          "friendlyname": "Declawed",
+          "type": "string",
+          "values": [
+            "",
+            "Yes",
+            "No"
+          ],
+          "modules": "Public",
+          "name": "animalDeclawed"
+        },
+        "animalDescription": {
+          "friendlyname": "Description",
+          "type": "string",
+          "lengthMax": "16777215",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "animalDescription"
+        },
+        "animalDescriptionPlain": {
+          "friendlyname": "Description (no html)",
+          "type": "string",
+          "lengthMax": "16777215",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "animalDescriptionPlain"
+        },
+        "animalDistinguishingMarks": {
+          "friendlyname": "Distinguishing marks",
+          "type": "string",
+          "lengthMax": "200",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "animalDistinguishingMarks"
+        },
+        "animalEarType": {
+          "friendlyname": "Ear type",
+          "type": "string",
+          "values": [
+            "",
+            "Cropped",
+            "Droopy",
+            "Erect",
+            "Long",
+            "Missing",
+            "Notched",
+            "Rose",
+            "Semi-erect",
+            "Tipped",
+            "Natural/Uncropped"
+          ],
+          "modules": "Public",
+          "name": "animalEarType"
+        },
+        "animalEnergyLevel": {
+          "friendlyname": "Energy level",
+          "type": "string",
+          "values": [
+            "",
+            "Low",
+            "Moderate",
+            "High"
+          ],
+          "modules": "Public",
+          "name": "animalEnergyLevel"
+        },
+        "animalExerciseNeeds": {
+          "friendlyname": "Exercise needs",
+          "type": "string",
+          "values": [
+            "",
+            "Not Required",
+            "Low",
+            "Moderate",
+            "High"
+          ],
+          "modules": "Public",
+          "name": "animalExerciseNeeds"
+        },
+        "animalEyeColor": {
+          "friendlyname": "Eye color",
+          "type": "string",
+          "values": [
+            "",
+            "Black",
+            "Blue",
+            "Blue-brown",
+            "Brown",
+            "Copper",
+            "Gold",
+            "Gray",
+            "Green",
+            "Hazelnut",
+            "Mixed",
+            "Pink",
+            "Yellow"
+          ],
+          "modules": "Public",
+          "name": "animalEyeColor"
+        },
+        "animalFence": {
+          "friendlyname": "Requires a home with fence",
+          "type": "string",
+          "values": [
+            "",
+            "Not Required",
+            "Any Type",
+            "3 foot",
+            "6 foot"
+          ],
+          "modules": "Public",
+          "name": "animalFence"
+        },
+        "animalFound": {
+          "friendlyname": "Found",
+          "type": "string",
+          "default": "No",
+          "values": [
+            "Yes",
+            "No"
+          ],
+          "modules": "Public",
+          "name": "animalFound"
+        },
+        "animalFoundDate": {
+          "friendlyname": "Found date",
+          "type": "date",
+          "modules": "Public",
+          "name": "animalFoundDate"
+        },
+        "animalFoundPostalcode": {
+          "friendlyname": "Found zip/postal code",
+          "type": "postalcode",
+          "lengthMax": "7",
+          "lengthMin": "0",
+          "modules": "Public",
+          "name": "animalFoundPostalcode"
+        },
+        "animalGeneralAge": {
+          "friendlyname": "General Age",
+          "type": "string",
+          "values": [
+            "",
+            "Baby",
+            "Young",
+            "Adult",
+            "Senior"
+          ],
+          "modules": "Public",
+          "name": "animalGeneralAge"
+        },
+        "animalGeneralSizePotential": {
+          "friendlyname": "Size potential (general)",
+          "type": "string",
+          "values": [
+            "",
+            "Small",
+            "Medium",
+            "Large",
+            "X-Large"
+          ],
+          "modules": "Public",
+          "name": "animalGeneralSizePotential"
+        },
+        "animalGroomingNeeds": {
+          "friendlyname": "Grooming needs",
+          "type": "string",
+          "values": [
+            "",
+            "Not Required",
+            "Low",
+            "Moderate",
+            "High"
+          ],
+          "modules": "Public",
+          "name": "animalGroomingNeeds"
+        },
+        "animalHousetrained": {
+          "friendlyname": "Housetrained",
+          "type": "string",
+          "values": [
+            "",
+            "No",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalHousetrained"
+        },
+        "animalIndoorOutdoor": {
+          "friendlyname": "Indoor/Outdoor",
+          "type": "string",
+          "values": [
+            "",
+            "Indoor Only",
+            "Indoor and Outdoor",
+            "Outdoor Only"
+          ],
+          "modules": "Public",
+          "name": "animalIndoorOutdoor"
+        },
+        "animalKillDate": {
+          "friendlyname": "Euthanasia date",
+          "type": "date",
+          "modules": "Public",
+          "name": "animalKillDate"
+        },
+        "animalKillReason": {
+          "friendlyname": "Euthanasia reason",
+          "type": "string",
+          "values": [
+            "",
+            "Age",
+            "Behavior",
+            "Breed",
+            "Medical",
+            "Space"
+          ],
+          "modules": "Public",
+          "name": "animalKillReason"
+        },
+        "animalLocation": {
+          "friendlyname": "Location",
+          "type": "postalcode",
+          "modules": "Public",
+          "name": "animalLocation"
+        },
+        "animalLocationCoordinates": {
+          "friendlyname": "Location coordinates",
+          "type": "string",
+          "modules": "Public",
+          "name": "animalLocationCoordinates"
+        },
+        "animalLocationDistance": {
+          "friendlyname": "Distance",
+          "type": "int",
+          "modules": "Public",
+          "name": "animalLocationDistance"
+        },
+        "animalLocationCitystate": {
+          "friendlyname": "Location city, state",
+          "type": "string",
+          "modules": "Public",
+          "name": "animalLocationCitystate"
+        },
+        "animalLocationState": {
+          "friendlyname": "Location state",
+          "type": "string",
+          "modules": "Public",
+          "name": "animalLocationState"
+        },
+        "animalMicrochipped": {
+          "friendlyname": "Microchipped",
+          "type": "string",
+          "values": [
+            "",
+            "Yes",
+            "No"
+          ],
+          "modules": "Public",
+          "name": "animalMicrochipped"
+        },
+        "animalMixedBreed": {
+          "friendlyname": "Mixed breed",
+          "type": "string",
+          "values": [
+            "",
+            "Yes",
+            "No"
+          ],
+          "modules": "Public",
+          "name": "animalMixedBreed"
+        },
+        "animalName": {
+          "friendlyname": "Name",
+          "type": "string",
+          "lengthMax": "50",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "animalName"
+        },
+        "animalSpecialneeds": {
+          "friendlyname": "Has special needs",
+          "type": "string",
+          "values": [
+            "",
+            "No",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalSpecialneeds"
+        },
+        "animalSpecialneedsDescription": {
+          "friendlyname": "Special needs description",
+          "type": "string",
+          "lengthMax": "65535",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "animalSpecialneedsDescription"
+        },
+        "animalNeedsFoster": {
+          "friendlyname": "Needs a Foster",
+          "type": "string",
+          "values": [
+            "",
+            "Yes",
+            "No"
+          ],
+          "modules": "Public",
+          "name": "animalNeedsFoster"
+        },
+        "animalNewPeople": {
+          "friendlyname": "Reaction to new people",
+          "type": "string",
+          "values": [
+            "",
+            "Cautious",
+            "Friendly",
+            "Protective",
+            "Aggressive"
+          ],
+          "modules": "Public",
+          "name": "animalNewPeople"
+        },
+        "animalNotHousetrainedReason": {
+          "friendlyname": "Reason not housetrained",
+          "type": "string",
+          "lengthMax": "100",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "animalNotHousetrainedReason"
+        },
+        "animalObedienceTraining": {
+          "friendlyname": "Obedience training",
+          "type": "string",
+          "values": [
+            "",
+            "Needs Training",
+            "Has Basic Training",
+            "Well Trained"
+          ],
+          "modules": "Public",
+          "name": "animalObedienceTraining"
+        },
+        "animalOKWithAdults": {
+          "friendlyname": "Good with adults",
+          "type": "string",
+          "values": [
+            "",
+            "All",
+            "Men Only",
+            "Women Only"
+          ],
+          "modules": "Public",
+          "name": "animalOKWithAdults"
+        },
+        "animalOKWithCats": {
+          "friendlyname": "OK with cats",
+          "type": "string",
+          "values": [
+            "",
+            "Yes",
+            "No"
+          ],
+          "modules": "Public",
+          "name": "animalOKWithCats"
+        },
+        "animalOKWithDogs": {
+          "friendlyname": "OK with dogs",
+          "type": "string",
+          "values": [
+            "",
+            "Yes",
+            "No"
+          ],
+          "modules": "Public",
+          "name": "animalOKWithDogs"
+        },
+        "animalOKWithKids": {
+          "friendlyname": "OK with kids",
+          "type": "string",
+          "values": [
+            "",
+            "Yes",
+            "No"
+          ],
+          "modules": "Public",
+          "name": "animalOKWithKids"
+        },
+        "animalOwnerExperience": {
+          "friendlyname": "Owner experience needed",
+          "type": "string",
+          "values": [
+            "",
+            "None",
+            "Species",
+            "Breed"
+          ],
+          "modules": "Public",
+          "name": "animalOwnerExperience"
+        },
+        "animalPattern": {
+          "friendlyname": "Pattern",
+          "type": "string",
+          "values": "",
+          "modules": "Public",
+          "name": "animalPattern"
+        },
+        "animalPatternID": {
+          "friendlyname": "Pattern",
+          "type": "key",
+          "values": "animalPatterns",
+          "modules": "Public",
+          "name": "animalPatternID"
+        },
+        "animalAdoptionPending": {
+          "friendlyname": "Adoption pending",
+          "type": "string",
+          "default": "No",
+          "values": [
+            "Yes",
+            "No"
+          ],
+          "modules": "Public",
+          "name": "animalAdoptionPending"
+        },
+        "animalPrimaryBreed": {
+          "friendlyname": "Primary breed",
+          "type": "string",
+          "values": "",
+          "modules": "Public",
+          "name": "animalPrimaryBreed"
+        },
+        "animalPrimaryBreedID": {
+          "friendlyname": "Primary breed",
+          "type": "key",
+          "values": "animalBreeds",
+          "modules": "Public",
+          "name": "animalPrimaryBreedID"
+        },
+        "animalRescueID": {
+          "friendlyname": "Rescue ID",
+          "type": "string",
+          "lengthMax": "25",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "animalRescueID"
+        },
+        "animalSearchString": {
+          "friendlyname": "Search",
+          "type": "string",
+          "values": "",
+          "modules": "Public",
+          "name": "animalSearchString"
+        },
+        "animalSecondaryBreed": {
+          "friendlyname": "Secondary Breed",
+          "type": "string",
+          "values": "",
+          "modules": "Public",
+          "name": "animalSecondaryBreed"
+        },
+        "animalSecondaryBreedID": {
+          "friendlyname": "Secondary Breed",
+          "type": "key",
+          "values": "animalBreeds",
+          "modules": "Public",
+          "name": "animalSecondaryBreedID"
+        },
+        "animalSex": {
+          "friendlyname": "Sex",
+          "type": "string",
+          "values": [
+            "",
+            "Female",
+            "Male"
+          ],
+          "modules": "Public",
+          "name": "animalSex"
+        },
+        "animalShedding": {
+          "friendlyname": "Shedding amount",
+          "type": "string",
+          "values": [
+            "",
+            "Moderate",
+            "None",
+            "High"
+          ],
+          "modules": "Public",
+          "name": "animalShedding"
+        },
+        "animalSizeCurrent": {
+          "friendlyname": "Current size",
+          "type": "decimal",
+          "default": "0.00",
+          "modules": "Public",
+          "name": "animalSizeCurrent"
+        },
+        "animalSizePotential": {
+          "friendlyname": "Size potential",
+          "type": "decimal",
+          "default": "0.00",
+          "modules": "Public",
+          "name": "animalSizePotential"
+        },
+        "animalSizeUOM": {
+          "friendlyname": "Size unit of measure",
+          "type": "string",
+          "values": [
+            "",
+            "Centimeters",
+            "Hands",
+            "Inches",
+            "Kilograms",
+            "Ounces",
+            "Pounds"
+          ],
+          "modules": "Public",
+          "name": "animalSizeUOM"
+        },
+        "animalSpecies": {
+          "friendlyname": "Species",
+          "type": "string",
+          "values": "",
+          "modules": "Public",
+          "name": "animalSpecies"
+        },
+        "animalSpeciesID": {
+          "friendlyname": "Species",
+          "type": "key",
+          "values": "animalSpecies",
+          "modules": "Public",
+          "name": "animalSpeciesID"
+        },
+        "animalSponsorable": {
+          "friendlyname": "Allow sponsorship",
+          "type": "string",
+          "default": "No",
+          "values": [
+            "Yes",
+            "No"
+          ],
+          "modules": "Public",
+          "name": "animalSponsorable"
+        },
+        "animalSponsors": {
+          "friendlyname": "Sponsors",
+          "type": "string",
+          "lengthMax": "65535",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "animalSponsors"
+        },
+        "animalSponsorshipDetails": {
+          "friendlyname": "Sponsorship details",
+          "type": "string",
+          "lengthMax": "65535",
+          "lengthMin": "",
+          "modules": "Public",
+          "default": "",
+          "name": "animalSponsorshipDetails"
+        },
+        "animalSponsorshipMinimum": {
+          "friendlyname": "Sponsorship minimum",
+          "type": "decimal",
+          "default": "0.00",
+          "modules": "Public",
+          "name": "animalSponsorshipMinimum"
+        },
+        "animalStatus": {
+          "friendlyname": "Status",
+          "type": "string",
+          "modules": "Public",
+          "name": "animalStatus"
+        },
+        "animalStatusID": {
+          "friendlyname": "Status",
+          "type": "key",
+          "values": "animalStatuses",
+          "modules": "Public",
+          "name": "animalStatusID"
+        },
+        "animalSummary": {
+          "friendlyname": "Summary",
+          "type": "string",
+          "lengthMax": "200",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "animalSummary"
+        },
+        "animalTailType": {
+          "friendlyname": "Tail type",
+          "type": "string",
+          "values": [
+            "",
+            "Bare",
+            "Bob",
+            "Curled",
+            "Docked",
+            "Kinked",
+            "Long",
+            "Missing",
+            "Short"
+          ],
+          "modules": "Public",
+          "name": "animalTailType"
+        },
+        "animalThumbnailUrl": {
+          "friendlyname": "Thumbnail URL",
+          "type": "string",
+          "modules": "Public",
+          "name": "animalThumbnailUrl"
+        },
+        "animalUptodate": {
+          "friendlyname": "Up-to-date",
+          "type": "string",
+          "values": [
+            "",
+            "Yes",
+            "No"
+          ],
+          "modules": "Public",
+          "name": "animalUptodate"
+        },
+        "animalUpdatedDate": {
+          "friendlyname": "Last updated",
+          "type": "date",
+          "modules": "Public",
+          "name": "animalUpdatedDate"
+        },
+        "animalUrl": {
+          "friendlyname": "Web page",
+          "type": "url",
+          "lengthMax": "200",
+          "modules": "Public",
+          "name": "animalUrl"
+        },
+        "animalVocal": {
+          "friendlyname": "Likes to vocalize",
+          "type": "string",
+          "values": [
+            "",
+            "Quiet",
+            "Some",
+            "Lots"
+          ],
+          "name": "animalVocal"
+        },
+        "animalYardRequired": {
+          "friendlyname": "Requires a Yard",
+          "type": "string",
+          "values": [
+            "",
+            "Yes",
+            "No"
+          ],
+          "modules": "Public",
+          "name": "animalYardRequired"
+        },
+        "animalAffectionate": {
+          "friendlyname": "Affectionate",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalAffectionate"
+        },
+        "animalApartment": {
+          "friendlyname": "Apartment appropriate",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalApartment"
+        },
+        "animalCratetrained": {
+          "friendlyname": "Crate trained",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalCratetrained"
+        },
+        "animalDrools": {
+          "friendlyname": "Drools excessively",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalDrools"
+        },
+        "animalEagerToPlease": {
+          "friendlyname": "Eager to please",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalEagerToPlease"
+        },
+        "animalEscapes": {
+          "friendlyname": "Tries to escape",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalEscapes"
+        },
+        "animalEventempered": {
+          "friendlyname": "Even-tempered",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalEventempered"
+        },
+        "animalFetches": {
+          "friendlyname": "Likes to fetch",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalFetches"
+        },
+        "animalGentle": {
+          "friendlyname": "Gentle",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalGentle"
+        },
+        "animalGoodInCar": {
+          "friendlyname": "Does well in a car",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalGoodInCar"
+        },
+        "animalGoofy": {
+          "friendlyname": "Goofy",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalGoofy"
+        },
+        "animalHasAllergies": {
+          "friendlyname": "Has allergies",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalHasAllergies"
+        },
+        "animalHearingImpaired": {
+          "friendlyname": "Hearing impaired",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalHearingImpaired"
+        },
+        "animalHypoallergenic": {
+          "friendlyname": "Hypoallergenic",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalHypoallergenic"
+        },
+        "animalIndependent": {
+          "friendlyname": "Independent / aloof",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalIndependent"
+        },
+        "animalIntelligent": {
+          "friendlyname": "Intelligent",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalIntelligent"
+        },
+        "animalLap": {
+          "friendlyname": "Lap pet",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalLap"
+        },
+        "animalLeashtrained": {
+          "friendlyname": "Leash trained",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalLeashtrained"
+        },
+        "animalNeedsCompanionAnimal": {
+          "friendlyname": "Needs companion animal",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalNeedsCompanionAnimal"
+        },
+        "animalNoCold": {
+          "friendlyname": "Cold sensitive",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalNoCold"
+        },
+        "animalNoFemaleDogs": {
+          "friendlyname": "Not good with female dogs",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalNoFemaleDogs"
+        },
+        "animalNoHeat": {
+          "friendlyname": "Heat sensitive",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalNoHeat"
+        },
+        "animalNoLargeDogs": {
+          "friendlyname": "Not good with large dogs",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalNoLargeDogs"
+        },
+        "animalNoMaleDogs": {
+          "friendlyname": "Not good with male dogs",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalNoMaleDogs"
+        },
+        "animalNoSmallDogs": {
+          "friendlyname": "Not good with small dogs",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalNoSmallDogs"
+        },
+        "animalObedient": {
+          "friendlyname": "Obedient",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalObedient"
+        },
+        "animalOKForSeniors": {
+          "friendlyname": "Good for seniors / elderly",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalOKForSeniors"
+        },
+        "animalOKWithFarmAnimals": {
+          "friendlyname": "Good with farm animals",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalOKWithFarmAnimals"
+        },
+        "animalOlderKidsOnly": {
+          "friendlyname": "Older/ considerate kids only",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalOlderKidsOnly"
+        },
+        "animalOngoingMedical": {
+          "friendlyname": "Needs ongoing medical care",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalOngoingMedical"
+        },
+        "animalPlayful": {
+          "friendlyname": "Playful",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalPlayful"
+        },
+        "animalPlaysToys": {
+          "friendlyname": "Likes toys",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalPlaysToys"
+        },
+        "animalPredatory": {
+          "friendlyname": "Predatory",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalPredatory"
+        },
+        "animalProtective": {
+          "friendlyname": "Protective / territorial",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalProtective"
+        },
+        "animalSightImpaired": {
+          "friendlyname": "Sight impaired",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalSightImpaired"
+        },
+        "animalSkittish": {
+          "friendlyname": "Skittish",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalSkittish"
+        },
+        "animalSpecialDiet": {
+          "friendlyname": "Special diet required",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalSpecialDiet"
+        },
+        "animalSwims": {
+          "friendlyname": "Likes to swim",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalSwims"
+        },
+        "animalTimid": {
+          "friendlyname": "Timid / shy",
+          "type": "string",
+          "values": [
+            "",
+            "Yes"
+          ],
+          "modules": "Public",
+          "name": "animalTimid"
+        },
+        "fosterEmail": {
+          "friendlyname": "Email",
+          "type": "string",
+          "modules": "Public",
+          "name": "fosterEmail"
+        },
+        "fosterFirstname": {
+          "friendlyname": "First Name",
+          "type": "string",
+          "lengthMax": "100",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "fosterFirstname"
+        },
+        "fosterLastname": {
+          "friendlyname": "Last Name",
+          "type": "string",
+          "lengthMax": "100",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "fosterLastname"
+        },
+        "fosterName": {
+          "friendlyname": "Foster",
+          "type": "string",
+          "modules": "Public",
+          "name": "fosterName"
+        },
+        "fosterPhoneCell": {
+          "friendlyname": "Phone (Cell)",
+          "type": "string",
+          "lengthMax": "14",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "fosterPhoneCell"
+        },
+        "fosterPhoneHome": {
+          "friendlyname": "Phone (Home)",
+          "type": "string",
+          "lengthMax": "14",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "fosterPhoneHome"
+        },
+        "fosterSalutation": {
+          "friendlyname": "Salutation",
+          "type": "string",
+          "lengthMax": "4",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "fosterSalutation"
+        },
+        "locationAddress": {
+          "friendlyname": "Address",
+          "type": "string",
+          "lengthMax": "50",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "locationAddress"
+        },
+        "locationCity": {
+          "friendlyname": "City",
+          "type": "string",
+          "modules": "Public",
+          "name": "locationCity"
+        },
+        "locationCountry": {
+          "friendlyname": "Country",
+          "type": "string",
+          "lengthMax": "50",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "locationCountry"
+        },
+        "locationUrl": {
+          "friendlyname": "Link",
+          "type": "string",
+          "lengthMax": "200",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "locationUrl"
+        },
+        "locationName": {
+          "friendlyname": "Location",
+          "type": "enumLookup",
+          "modules": "Public",
+          "name": "locationName"
+        },
+        "locationPhone": {
+          "friendlyname": "Phone",
+          "type": "string",
+          "lengthMax": "14",
+          "lengthMin": "",
+          "modules": "Public",
+          "name": "locationPhone"
+        },
+        "locationState": {
+          "friendlyname": "State",
+          "type": "string",
+          "modules": "Public",
+          "name": "locationState"
+        },
+        "locationPostalcode": {
+          "friendlyname": "Postal Code",
+          "type": "postalcode",
+          "lengthMax": "7",
+          "lengthMin": "5",
+          "modules": "Public",
+          "name": "locationPostalcode"
+        },
+        "animalPictures": {
+          "friendlyname": "Pictures",
+          "type": "string",
+          "name": "animalPictures"
+        },
+        "animalVideos": {
+          "friendlyname": "Videos",
+          "type": "string",
+          "name": "animalVideos"
+        },
+        "animalVideoUrls": {
+          "friendlyname": "Video URLs",
+          "type": "string",
+          "name": "animalVideoUrls"
+        }
+      }
+    },
+    "updateSettings": {
+      "modules": "",
+      "permissions": "",
+      "fields": {
+        "enableAnimalsSpecialListBabies": {
+          "name": "enableAnimalsSpecialListBabies",
+          "friendlyname": "Babies (Kittens, Puppies) enabled",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalsSpecialListBabiesYoungest": {
+          "name": "setAnimalsSpecialListBabiesYoungest",
+          "friendlyname": "Babies (Kittens, Puppies) Youngest Age",
+          "type": "int"
+        },
+        "setAnimalsSpecialListBabiesOldest": {
+          "name": "setAnimalsSpecialListBabiesOldest",
+          "friendlyname": "Babies (Kittens, Puppies) Oldest Age",
+          "type": "int"
+        },
+        "enableAnimalsSpecialListTeens": {
+          "name": "enableAnimalsSpecialListTeens",
+          "friendlyname": "Teens enabled",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalsSpecialListTeensYoungest": {
+          "name": "setAnimalsSpecialListTeensYoungest",
+          "friendlyname": "Teens Youngest Age",
+          "type": "int"
+        },
+        "setAnimalsSpecialListTeensOldest": {
+          "name": "setAnimalsSpecialListTeensOldest",
+          "friendlyname": "Teens Oldest Age",
+          "type": "int"
+        },
+        "enableAnimalsSpecialListAdults": {
+          "name": "enableAnimalsSpecialListAdults",
+          "friendlyname": "Adults enabled",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalsSpecialListAdultsYoungest": {
+          "name": "setAnimalsSpecialListAdultsYoungest",
+          "friendlyname": "Adults Youngest Age",
+          "type": "int"
+        },
+        "setAnimalsSpecialListAdultsOldest": {
+          "name": "setAnimalsSpecialListAdultsOldest",
+          "friendlyname": "Adults Oldest Age",
+          "type": "int"
+        },
+        "enableAnimalsSpecialListSeniors": {
+          "name": "enableAnimalsSpecialListSeniors",
+          "friendlyname": "Seniors enabled",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalsSpecialListSeniorsYoungest": {
+          "name": "setAnimalsSpecialListSeniorsYoungest",
+          "friendlyname": "Seniors Youngest Age",
+          "type": "int"
+        },
+        "enableAnimalsSpecialListLongtime": {
+          "name": "enableAnimalsSpecialListLongtime",
+          "friendlyname": "Long Time/Must Adopt enabled",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalsSpecialListLongtimeYoungest": {
+          "name": "setAnimalsSpecialListLongtimeYoungest",
+          "friendlyname": "Long Time/Must Adopt Shortest length of time",
+          "type": "int"
+        },
+        "setAnimalsSpecialListLongtimeOldest": {
+          "name": "setAnimalsSpecialListLongtimeOldest",
+          "friendlyname": "Long Time/Must Adopt Longest length of time",
+          "type": "int"
+        },
+        "enableAnimalsSpecialListRecent": {
+          "name": "enableAnimalsSpecialListRecent",
+          "friendlyname": "Recent Arrivals enabled",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalsSpecialListRecentDays": {
+          "name": "setAnimalsSpecialListRecentDays",
+          "friendlyname": "Recent Arrivals Shortest length of time",
+          "type": "int"
+        },
+        "enableAnimalsSpecialListSpecialNeeds": {
+          "name": "enableAnimalsSpecialListSpecialNeeds",
+          "friendlyname": "Special Needs enabled",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "enableAnimalsSpecialListUrgent": {
+          "name": "enableAnimalsSpecialListUrgent",
+          "friendlyname": "Urgent enabled",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "enableAnimalsSpecialListFoster": {
+          "name": "enableAnimalsSpecialListFoster",
+          "friendlyname": "Needs a Caretaker/Foster enabled",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "enableAnimalsSpecialListCourtesy": {
+          "name": "enableAnimalsSpecialListCourtesy",
+          "friendlyname": "Courtesy Listings enabled",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "enableAnimalAutoRescueID": {
+          "name": "enableAnimalAutoRescueID",
+          "friendlyname": "Automatically set animal's Rescue ID",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalAutoRescueIDFormat": {
+          "name": "setAnimalAutoRescueIDFormat",
+          "friendlyname": "Format for Rescue IDs",
+          "type": "string",
+          "values": [
+            "Species, Year, Count",
+            "Incrementing Number",
+            "Incrementing Number with Year"
+          ]
+        },
+        "disableAnimalAutoRescueIDCourtesyListings": {
+          "name": "disableAnimalAutoRescueIDCourtesyListings",
+          "friendlyname": "Do not automatically assign Rescue ID for courtesy listings",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "enablePortalWebsite": {
+          "name": "enablePortalWebsite",
+          "friendlyname": "Enable the Portal website",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "showAnimalMicrochip": {
+          "name": "showAnimalMicrochip",
+          "friendlyname": "Show if the animal is microchipped",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "showAnimalAltered": {
+          "name": "showAnimalAltered",
+          "friendlyname": "Show if the animal is altered",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "showAnimalWillBeAltered": {
+          "name": "showAnimalWillBeAltered",
+          "friendlyname": "Show if the animal will be altered before adoption",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "showAnimalRescueID": {
+          "name": "showAnimalRescueID",
+          "friendlyname": "Show the animal's Rescue ID",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "showAnimalAdoptionFee": {
+          "name": "showAnimalAdoptionFee",
+          "friendlyname": "Show the animal's adoption fee",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "showAnimalEuthanasiaInfo": {
+          "name": "showAnimalEuthanasiaInfo",
+          "friendlyname": "Show the animal's euthanasia information",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "disableAnimalCourtesyHeaderFooter": {
+          "name": "disableAnimalCourtesyHeaderFooter",
+          "friendlyname": "Disable the animal header/footer to courtesy animals",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "showAnimalKennelcardJournalEntries": {
+          "name": "showAnimalKennelcardJournalEntries",
+          "friendlyname": "Show journal entries on the kennel card",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "showAnimalKennelcardJournalCost": {
+          "name": "showAnimalKennelcardJournalCost",
+          "friendlyname": "Show cost on the kennel card",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ],
+          "modules": [
+            "Animals"
+          ],
+          "permissions": [
+            "OptionsAdmin"
+          ]
+        },
+        "disableAnimalExportAdopted": {
+          "name": "disableAnimalExportAdopted",
+          "friendlyname": "Prevent adopted animals from being uploaded to Petfinder",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "enableExportAdoptedToAdoptapet": {
+          "name": "enableExportAdoptedToAdoptapet",
+          "friendlyname": "Export adopted pets to Adopt-a-Pet.com",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "disableAnimalExportCourtesy": {
+          "name": "disableAnimalExportCourtesy",
+          "friendlyname": "Prevent courtesy animals from being uploaded to other sites",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "disableAnimalExportAnimalWebPageLink": {
+          "name": "disableAnimalExportAnimalWebPageLink",
+          "friendlyname": "Disable the link to the animal's web page",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "disableAnimalExportWebsiteLink": {
+          "name": "disableAnimalExportWebsiteLink",
+          "friendlyname": "Disable the link to your organization's website",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "disableAnimalExportAdoptionFormLink": {
+          "name": "disableAnimalExportAdoptionFormLink",
+          "friendlyname": "Disable the link to your adoption form",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "enableAnimalExportDescriptionHeader": {
+          "name": "enableAnimalExportDescriptionHeader",
+          "friendlyname": "Include the Animal Description Header in the animal description",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "enableAnimalExportDescriptionFooter": {
+          "name": "enableAnimalExportDescriptionFooter",
+          "friendlyname": "Include the Animal Description Footer in the animal description",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "enableAnimalExportUniqueAnimalID": {
+          "name": "enableAnimalExportUniqueAnimalID",
+          "friendlyname": "Use the RescueGroups.org Animal ID as a Unique ID",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "enableAnimalExportContactFieldFirstname": {
+          "name": "enableAnimalExportContactFieldFirstname",
+          "friendlyname": "Show the foster/caretaker's first name",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "enableAnimalExportContactFieldLastname": {
+          "name": "enableAnimalExportContactFieldLastname",
+          "friendlyname": "Show the foster/caretaker's last name",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "enableAnimalExportContactFieldEmail": {
+          "name": "enableAnimalExportContactFieldEmail",
+          "friendlyname": "Show the foster/caretaker's email address",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "enableAnimalExportContactFieldPhoneHome": {
+          "name": "enableAnimalExportContactFieldPhoneHome",
+          "friendlyname": "Show the foster/caretaker's home phone number",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "enableAnimalExportContactFieldPhoneCell": {
+          "name": "enableAnimalExportContactFieldPhoneCell",
+          "friendlyname": "Show the foster/caretaker's cell phone number",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalExportYouTubeAccount": {
+          "name": "setAnimalExportYouTubeAccount",
+          "friendlyname": "Account to use for YouTube video upload",
+          "type": "string",
+          "values": [
+            "Disabled",
+            "RescueGroups.org",
+            "Organization"
+          ]
+        },
+        "setAnimalExportYouTubeAuthorizationCode": {
+          "name": "setAnimalExportYouTubeAuthorizationCode",
+          "friendlyname": "YouTube authorization code",
+          "type": "string",
+          "lengthMax": "75",
+          "lengthMin": "0"
+        },
+        "setAnimalExportDefaultCategory1": {
+          "name": "setAnimalExportDefaultCategory1",
+          "friendlyname": "By default, export to services that list animals for adoption",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalExportDefaultCategory4": {
+          "name": "setAnimalExportDefaultCategory4",
+          "friendlyname": "By default, export to services that list animals for adoption (from non-rescue/shelters)",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalExportDefaultCategory3": {
+          "name": "setAnimalExportDefaultCategory3",
+          "friendlyname": "By default, export to services that list animals for sale by breeder",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalExportDefaultCategory2": {
+          "name": "setAnimalExportDefaultCategory2",
+          "friendlyname": "By default, export to services that list animals for sale by owner",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalExportDefaultCategory5": {
+          "name": "setAnimalExportDefaultCategory5",
+          "friendlyname": "By default, export to services that provide animal related classifieds",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalExportDefaultCategory6": {
+          "name": "setAnimalExportDefaultCategory6",
+          "friendlyname": "By default, export to services that provide animal related community discussion/forums",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalExportDefaultCategory8": {
+          "name": "setAnimalExportDefaultCategory8",
+          "friendlyname": "By default, export to services that provide animal related educational information",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalExportDefaultCategory7": {
+          "name": "setAnimalExportDefaultCategory7",
+          "friendlyname": "By default, export to services that provide animal related news",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalExportDefaultCategory13": {
+          "name": "setAnimalExportDefaultCategory13",
+          "friendlyname": "By default, export to services that provide event calendars",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalExportDefaultCategory9": {
+          "name": "setAnimalExportDefaultCategory9",
+          "friendlyname": "By default, export to services that sell/promote animal related products (food, toys, treats, etc)",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalExportDefaultCategory11": {
+          "name": "setAnimalExportDefaultCategory11",
+          "friendlyname": "By default, export to services that sell/promote animal related services (training, grooming)",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalExportDefaultCategory10": {
+          "name": "setAnimalExportDefaultCategory10",
+          "friendlyname": "By default, export to services that sell/promote non-animal related products",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setAnimalExportDefaultCategory12": {
+          "name": "setAnimalExportDefaultCategory12",
+          "friendlyname": "By default, export to services that sell/promote non-animal related services",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "disableAnimalDescriptionVideo": {
+          "name": "disableAnimalDescriptionVideo",
+          "friendlyname": "Disable videos in Animal descriptions",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ],
+          "modules": [
+            "Web Pages"
+          ],
+          "permissions": [
+            "OptionsAdmin"
+          ]
+        },
+        "enableAnimalDescriptionVideoLink": {
+          "name": "enableAnimalDescriptionVideoLink",
+          "friendlyname": "Use a link instead of embedding the video in Animal descriptions",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ],
+          "modules": [
+            "Web Pages"
+          ],
+          "permissions": [
+            "OptionsAdmin"
+          ]
+        },
+        "enableFreePetChipRegistry": {
+          "name": "enableFreePetChipRegistry",
+          "friendlyname": "Enable FreePetChipRegistry registrations",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setFreePetChipRegistryUserName": {
+          "name": "setFreePetChipRegistryUserName",
+          "friendlyname": "FreePetChipRegistry user name",
+          "type": "string",
+          "lengthMax": "50",
+          "lengthMin": "0"
+        },
+        "enablePetLinkRegistry": {
+          "name": "enablePetLinkRegistry",
+          "friendlyname": "Enable PetLink registrations",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setPetLinkUserName": {
+          "name": "setPetLinkUserName",
+          "friendlyname": "PetLink user name",
+          "type": "string",
+          "lengthMax": "100",
+          "lengthMin": "0"
+        },
+        "setPetLinkPassword": {
+          "name": "setPetLinkPassword",
+          "friendlyname": "PetLink password",
+          "type": "string",
+          "lengthMax": "50",
+          "lengthMin": "0"
+        },
+        "disableMicrochipUserAlert": {
+          "name": "disableMicrochipUserAlert",
+          "friendlyname": "Disable the email alert to the volunteer concerning microchip registration (success or failure)",
+          "type": "string",
+          "values": [
+            "Yes",
+            "No"
+          ]
+        },
+        "setMicrochipAlertEmails": {
+          "name": "setMicrochipAlertEmails",
+          "friendlyname": "Email address(es) to alert concerning microchip registration (success or failure)",
+          "type": "string",
+          "lengthMax": "500"
+        }
+      }
+    }
+  }
+}
