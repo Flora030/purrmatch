@@ -1,23 +1,62 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
+# ==============================
+# FRONTEND (React)
+# ==============================
+node_modules/
+build/
+dist/
+.pnp/
 .pnp.js
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
+# Environment files
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# System files
+.DS_Store
+Thumbs.db
+
+# BACKEND (Flask / Python)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+*.db
+
+venv/
+.env/
+.venv/
+
+instance/
+*.pid
+
+# LARGE FILES / ARTIFACTS
+backend/post_processing/
+backend/__pycache__/
+backend/*.zip
+backend/*.csv
+backend/*.xlsx
+backend/*.png
+backend/*.jpg
+backend/*.jpeg
+backend/*.gif
+
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# DATA & CACHES
+__pycache__/
+.cache/
+*.bak
+*.tmp
+*.log
